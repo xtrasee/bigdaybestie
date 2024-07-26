@@ -1,0 +1,107 @@
+:root{
+  --main-background: #FFF8DC;
+  --main-font: 'Raleway';
+  --mainheader-font: 'Genty';
+  --header-font: 'TanMeringue';
+  --btn-color: #F5AC0B;
+  --pink-color: #F5ACC8;
+  --red-color: #FF5757;
+  --purple-color: #DAB6FF;
+  --light-orange-color: #FFCF73;
+  --mobile-fontsize: 0.75rem;
+}
+
+/* font imports */
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/2.ttf');
+}
+
+@font-face {
+  font-family: 'Genty';
+  src: url('/fonts/Genty.ttf');
+}
+
+@font-face {
+  font-family: 'Luckybones';
+  src: url('/fonts/Luckybones.ttf');
+}
+
+@font-face {
+  font-family: 'TanMeringue';
+  src: url('/fonts/TanMeringue.ttf');
+}
+
+#root{
+  background-color: var(--main-background);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+header{
+  text-align: center;
+}
+
+h1{
+  font-family: var(--main-font);
+}
+
+h2{
+  font-family: var(--header-font);
+  color: var(--pink-color);
+  text-shadow: -0.75px -0.75px 0 #000,  
+            0.75px -0.75px 0 #000,
+           -0.75px  0.75px 0 #000,
+            0.75px  0.75px 0 #000;
+  font-size: 0.75rem;
+}
+
+h3{
+  font-family: var(--mainheader-font);
+  letter-spacing: 0.10rem;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a button{
+  color: inherit;
+}
+
+.btn-contain{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-flex{
+  display: flex;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 0rem;
+}
+
+.logo{
+  text-align: center;
+}

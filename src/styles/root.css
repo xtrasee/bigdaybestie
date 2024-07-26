@@ -1,0 +1,309 @@
+@media screen and (min-width: 300px){    
+    .contain-1 h1{
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .container-1 button, .btn{
+        background-color: var(--btn-color);
+        padding: 0.20rem 0.3rem;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: #422800 3px 2px 0px 0px;
+        border: none;
+        font-family: var(--main-font);
+        margin-top: 0.5rem;
+    }
+    
+    .location{
+        font-family: 'Luckybones';
+        font-size: 0.7rem;
+        padding: 1rem 0rem 2.5rem 0rem;
+    }
+    
+    .landing {
+        position: relative;
+    }
+    
+    .svg-container {
+        position: relative;
+    }
+    
+    .star-1, .star-2 {
+        position: absolute;
+        width: auto;
+        height: 1.75rem;
+    }
+    
+    .star-1 {
+        top: 70px; 
+        left: 100px;
+    }
+    
+    .star-2 {
+        bottom: 70px;
+        right: 60px;
+    }
+    
+    .contain-1 {
+        position: relative;
+        z-index: 2; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    h1 {
+        margin: 0.5rem 0;
+    }
+    
+    .hidden-img{
+        display: none;
+        height: 160px;
+        width: 130px;
+        background-color: pink;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        margin: 0.50rem;
+        border: 1px solid black;
+    }
+    
+    .background{
+       position: relative;
+    }
+    .container-1{
+        position: relative;
+        z-index: 2;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--pink-color);
+    }
+    
+    .wave-top,
+    .wave-bot{
+        position: absolute;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .wave-top{
+        top: -36%;
+        z-index: 1;
+    }
+    
+    .wave-bot{
+        bottom: -35%;
+    }
+    
+    .main-img, .profile-pic{
+        height: 13rem;
+        width: 12rem;
+        background-color: pink;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        margin: 0.50rem;
+        border: 0.5px solid black;
+    }
+    
+    .main-img{        
+        height: 170px;
+        width: 150px;
+    }
+    
+    .container-1-right-contents{
+        width: 50%;
+        font-family: var(--main-font);
+        margin-top: 0.55em;
+    }
+    
+    .container-1-right-contents p{
+        font-size: 0.75rem;
+        width: 80%;
+        margin: auto;
+        padding: 0.25rem 0rem;
+        z-index: 2;
+    }
+
+    .container-1-right-contents button{
+        font-size: .50rem;
+    }
+    
+    .container-1 h2{
+        font-size: .9rem;
+        letter-spacing: 0.09rem;
+    }
+    
+    .meet button{
+        font-size: 0.75rem;
+    }
+    
+    /* mini gallery */
+    .preview-gallery{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        width: min(100%-2rem, 768px);
+        justify-items: center;
+        margin-top: 6rem;
+    }
+    
+    .container-3{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img-card{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .gallery-btn, .final-btn{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0rem;
+    }
+    
+    .gallery-btn button, .final-btn button{
+        font-size: 1rem;
+        transform: skew(-20deg);
+        background-color: var(--btn-color);
+        box-shadow: #422800 4px 5px 0px 0px;
+        border: none;
+        border-radius: 75% 40% 75% 40%;
+    }
+    
+    .gallery-btn button{
+        padding: 1.25rem 2.5rem;
+    }
+    
+    .final-btn button{
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .gallery-btn span {
+        transform: skew(20deg);
+    }
+
+    /* PRICING */
+    .pricing-container{
+        padding-bottom: 1.25rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .background-contain{
+        background-color: var(--pink-color);
+        border-top: 1.75px solid black;
+    }
+
+    .pricing-h2{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    
+    .packages h2{
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        margin: auto;
+    }
+    
+    .pricing-container h3{
+        text-align: center;
+    }
+
+    .wedding{
+        font-size: 1.75rem;
+        position: absolute;
+        top: 170px;
+        left: 20%;
+    }
+
+    .planning-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .planning, .coordination{
+        width: 50%;
+        padding:1rem 1rem;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        font-size: 1.15rem;
+    }
+    
+    .planning{
+        background-color: var(--purple-color);
+        border-right: 1px solid black;
+        margin-right: 1rem;
+        border-radius: 0 45% 45% 0;
+    }
+    
+    .coordination{
+        background-color: var(--light-orange-color);
+        border-left: 1px solid black;
+        border-radius: 45% 0 0 45%;
+        margin-left: 2.5rem;
+    }
+    
+    .planning h3{
+        margin-right: 0.75rem;
+    }
+    
+    .pricing-btn, .contact-btn, .form-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        cursor: pointer;
+        font-family: var(--main-font);
+    }
+    
+    .pricing-btn button{
+        color: white;
+        background-color: black;
+        padding: 0.25rem;
+        border-radius: 10px;
+        margin-top: 0.75rem;
+        border: #000;
+    }
+
+    .wave-bot-2{
+        position: absolute;
+        z-index: 2;
+    }
+
+    .contain-test{
+        position:absolute;
+        bottom: 20px;
+        z-index: 3;
+        padding-top: 50px;        
+    }
+    
+    .contact-us{
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: var(--main-background);
+        background-image: url("images/carriage.JPEG");
+        background-size:cover;
+        width: 100vw;
+        margin-bottom: 1rem;
+        text-shadow: -0.75px -0.75px 0 #000,  
+                  0.75px -0.75px 0 #000,
+                 -0.75px  0.75px 0 #000,
+                  0.75px  0.75px 0 #000; /* Apply the black outline */
+        height: 200px;
+    }
+}
