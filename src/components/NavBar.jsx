@@ -18,7 +18,7 @@ class NavBar extends React.Component {
         return (
             <div className="nav-bar">
                 <span style={{ fontSize: '30px', cursor: 'pointer' }} onClick={this.openNav}>
-                    &#9776; open
+                    &#9776;
                 </span>
                 <div id="myNav" className="overlay">
                     <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>

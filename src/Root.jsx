@@ -1,24 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/root.css'
-import logo from '../../public/svg/logo.svg';
-import arrow from '../../public/svg/arrow.svg';
-import star1 from '../../public/svg/stars.svg';
-import star2 from '../../public/svg/stars-2.svg';
-import waveTop from '../../public/svg/wave-top.svg';
-import waveBottom from '../../public/svg/wave-bot.svg';
-import yellowFlower from '../../public/svg/yellow-flower.svg';
-import whiteArrow from '../../public/images/white-arrow.png';
+import './styles/root.css'
+import logo from '/public/svg/logo.svg';
+import arrow from '/public/svg/arrow.svg';
+import star1 from '/public/svg/stars.svg';
+import star2 from '/public/svg/stars-2.svg';
+import waveTop from '/public/svg/wave-top.svg';
+import waveBottom from '/public/svg/wave-bot.svg';
+import yellowFlower from '/public/svg/yellow-flower.svg';
+import whiteArrow from '/public/images/white-arrow.png';
+import Navbar from "./components/NavBar"
 
 const Root = () => {
     return (
         <>
             <header>
-                <Link to="/">
-                    <div className="logo">
-                        <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                <div className="main-heading">
+                    <div className="nav">
+                        <Navbar />
                     </div>
-                </Link>
+                    <Link to="/">
+                        <div className="logo">
+                            <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        </div>
+                    </Link>
+                </div>
             
                 <div className="landing">
                     <div className="contain-1">
@@ -64,7 +70,7 @@ const Root = () => {
                                 Are you planning a local or destination wedding, elopement, bridal shower, birthday, bach party or event and don’t know where to start? Look no further, because your Big Day Bestie is here to help!
                             </p>
         
-                            <Link to="/about">
+                            <Link to="about">
                                 <div className="btn-contain meet">
                                     <button className="btn-flex">Meet the Event Planner
                                         <img src={arrow} alt="" width="14px" />
