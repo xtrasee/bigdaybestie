@@ -15,13 +15,13 @@ const Root = () => {
     return (
         <>
             <header>
-                <div className="main-heading">
+                <div className="navbar">
                     <div className="nav">
                         <Navbar />
                     </div>
                     <Link to="/">
                         <div className="logo">
-                            <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                            <img className="main-logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
                         </div>
                     </Link>
                 </div>

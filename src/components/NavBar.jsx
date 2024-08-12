@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../public/svg/logo.svg';
 import arrow from '../../public/svg/arrow.svg';
-import '../styles/NavBar.css';
-import { render } from 'react-dom';
+import '../styles/navbar.css';
 
 class NavBar extends React.Component {
     closeNav = () => {
