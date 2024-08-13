@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/about.css'
 import Navbar from "../components/NavBar";
-import logo from '../../public/svg/logo.svg';
-import profile from '../../public/images/profile-pic.JPG'
-import waveTop from '/public/svg/wave-top.svg';
-import whiteArrow from '/public/images/white-arrow.png';
+import logo from '/svg/logo.svg';
+import profile from '/images/profile-pic.JPG'
+import waveTop from '/svg/wave-top.svg';
+import whiteArrow from '/images/white-arrow.png';
 
 const About = () => {
     return (

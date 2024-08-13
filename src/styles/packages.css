@@ -1,0 +1,190 @@
+@media screen and (min-width: 300px){ 
+    .packages{
+        text-align: center;
+        position: relative;
+    }
+
+    .packages h2{
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        margin: auto;
+    }
+
+    .packages-container li{
+        list-style-type: none;
+    }
+
+    .packages-container ul{
+        padding: 0;
+    }
+
+    .svgs-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 6;
+    }
+    
+    .curved-letters{
+        font-family: var(--mainheader-font);
+        font-size: 2rem;
+        letter-spacing:0.1rem
+    }
+    
+    .svg2-container{
+        position: relative;
+        top: -50px;
+        width: 25%;
+        margin: auto;
+    }
+    
+    .star-3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 5vh; /* Height relative to viewport height */
+        width: auto;
+        margin-top: 0.5rem;
+    }
+    
+    /* PARTIAL PLANNING */
+    
+    .partial-planning{
+        background-color: var(--pink-color);
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    .wave-three{
+        position: absolute;
+        bottom: -10%;
+        padding-top: 5rem;
+        z-index: 1;
+        margin-top: 2rem;
+    }
+    
+    .svg3-container{
+        position: relative;
+        top: -30px;
+        width: 25%;
+        margin: auto;
+    }
+    
+    .flower{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3vh; /* Height relative to viewport height */
+        width: auto;
+        z-index: 3;
+    }
+    
+    .wave-bot-3{
+        position: absolute;
+        bottom: -18%;
+    
+    }
+    
+    .packages p, .partial-planning p, .day-of-cord p, .other-services p{
+        width: 75%;
+        margin-left: 12.5%;
+        font-family: var(--main-font);
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    
+    .packages h4, .partial-planning h4, .day-of-cord h4, .other-services h4{
+        font-family: 'Luckybones';
+        text-align: center;
+        font-size: var(--mobile-fontsize);
+        margin: 1rem 0rem;
+    }
+    
+    .events h4{
+        font-family: 'Luckybones';
+        text-align: center;
+        font-size: var(--mobile-fontsize);
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+    
+    .packages ul, .partial-planning ul, .day-of-cord ul, .other-services ul{
+        font-family: var(--main-font);
+        text-align: center;
+        font-size: var(--mobile-fontsize);
+        margin-bottom: 0.25rem;
+    }
+    
+    .btn{
+        padding: 0.15rem 1.5rem;
+        margin-bottom: 4rem;
+        z-index: 3;
+        font-size: 0.6rem;
+    }
+    
+    .center-btn{
+        text-align: center;
+    }
+    
+    .desk-btn{
+        display: none;
+    }
+    
+    /* DAY OF COORD */
+    .day-of-cord{
+        margin-top: 15%;
+    }
+    
+    .sm{
+        font-size: 1.81rem;
+    }
+    
+    .svg3-container{
+        position: relative;
+        top: -30px;
+        width: 25%;
+        margin: auto;
+    }
+    
+    /* OTHER SERVICES */
+    
+    .other-services{
+        position: relative;
+        background-color: var(--pink-color);
+        margin-top: 15%;
+    }
+    
+    .other-services h2{
+        text-align: center;
+        font-size: 1.15rem;
+        color: var(--main-background);
+        padding-top: 1rem;
+        z-index: 3;
+        position: relative;
+    }
+    
+    .wave-top-4{
+        position: absolute;
+        top: -6%;
+        z-index: 3;
+    }
+    
+    .svg4-container{
+        position: relative;
+        top: -15px;
+        width: 25%;
+        margin: auto;
+    }
+    
+    .events{
+        background-color: var(--main-background);
+    }
+    
+    .events h4{
+        margin-top: 0rem;
+        font-size: 0.60rem;
+    }
+}

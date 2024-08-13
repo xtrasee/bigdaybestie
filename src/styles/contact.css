@@ -1,0 +1,63 @@
+@media screen and (min-width: 300px){
+    .contact-container{
+        width: 100vw;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        font-family: var(--main-font);
+        width: 80%;
+        margin-left: 10%;
+        font-size: var(--mobile-fontsize);
+    }
+
+    input,
+    select,
+    textarea{
+        /* to change color, ask jenn for hex code */
+        background-color: #ffce73b2;
+        font-family: var(--main-font);
+        margin-bottom: 0.5rem;
+        padding: 0.25rem;
+        border-radius: 10px;
+    }
+
+    label{
+        margin-bottom: 0.20rem;
+    }
+
+    .checkbox div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.25rem;
+    }
+    
+    .checkbox div input[type="checkbox"] {
+        margin-right: 0.5rem;
+    }
+
+    .checkbox p {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-btn button{
+        padding: 0rem 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    /* final page */
+    /* .menu{
+        text-align: center;
+    }
+
+    .menu h2{
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .final-btn{
+        margin-top: 2rem;
+    } */
+}

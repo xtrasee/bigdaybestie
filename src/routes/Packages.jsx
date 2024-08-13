@@ -1,87 +1,75 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/packages.css'
 import Navbar from "../components/NavBar";
+import logo from '/svg/logo.svg';
+import star3 from '../../public/svg/stars-3.svg';
+import arrow from '/svg/arrow.svg';
+import waveTop from '/svg/wave-top.svg';
+import waveBot from '/svg/wave-bot.svg';
+import flower from '../../public/svg/flower.svg';
+import hearts from '../../public/svg/hearts.svg';
+import rings from '../../public/svg/rings.svg';
 
 const Packages = () => {
     return (
         <>
             <header>
-                <div class="nav-bar">
-                    <div id="myNav" class="overlay">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="overlay-content">
-                            <a href="/index.html">
-                                <div class="logo"><img src="img/logo.svg" alt="" height="140px" style="margin-bottom: 2rem;"></div>
-                            </a>
-                            <a href="/about.html"><h2>ABOUT ME</h2></a>
-                            <a href="/packages.html"><h2>PACKAGES & PRICING</h2></a>
-                            <a href="/gallery.html"><h2>GALLERY</h2></a>
-                            <a href="/contact.html"><h2>CONTACT US</h2></a>
-                
-                            <a href="/contact.html">
-                                <div class="final-btn">
-                                    <button class="final-btn btn-flex">
-                                        <span>Inquire Here<img src="/img/arrow.svg" alt="" width="18px"></span>
-                                    </button>
-                                </div>
-                            </a>
-                        </div>
+                <div className="navbar">
+                    <div className="nav">
+                        <Navbar />
                     </div>
-                    
-                    <div class="mobile-menu">
-                        <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-                    </div>
-                    
                 </div>
             </header>
 
             <main>
-            </main>
-                <div class="packages-container">
-                    <a href="/index.html">
-                        <div class="logo"><img src="img/logo.svg" alt="" height="200px"></div>
-                    </a>
+                <div className="packages-container">
+                    <Link to="/">
+                        <div className="logo">
+                            <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        </div>
+                    </Link>
                     
-                    <div class="packages" id="pricing">
-                        <h2 class="pricing-h2">PACKAGES & PRICING</h2>
+                    <div className="packages" id="pricing">
+                        <h2 className="pricing-h2">PACKAGES & PRICING</h2>
             
-                        <div class="desktop-ver">
-                            <div class="left">
-                                <div class="svgs-container">
-                                    <svg class="curved" viewBox="0 100 500 120" width="500" height="120">
+                        <div className="desktop-ver">
+                            <div className="left">
+                                <div className="svgs-container">
+                                    <svg className="curved" viewBox="0 100 500 120" width="500" height="120">
                                         <path id="curve" fill="transparent" d="M100,200 Q250,100 400,200"/>
                                         <text text-anchor="start" width="600">
-                                        <textPath xlink:href="#curve" class="curved-letters">
+                                        <textPath xlinkHref="#curve" className="curved-letters">
                                             Full Service Planning
                                         </textPath>
                                         </text>
                                     </svg>
                                 </div>
             
-                                <div class="svg2-container">
-                                    <img class="star-3" src="img/stars-2.svg" alt="">
+                                <div className="svg2-container">
+                                    <img className="star-3" src= {star3} alt="" />
                                 </div>
             
-                                <!-- insert star svg -->
-                                <div class="description2">
+                                <div className="description2">
                                     <p>The Full Service Wedding Planning Package ensures that
                                         everything will be seamlessly planned and executed from start
                                         to finish. We will be there every step of the way, including on
-                                        the day of, to make sure your vision comes to life!</p>
+                                        the day of, to make sure your vision comes to life!
+                                    </p>
                                 </div>
             
-                                <div class="desk-btn">
-                                    <a href="/contact.html">
-                                        <div class="btn-contain">
-                                            <button class="btn btn-flex">Inquire Here<img src="/img/arrow.svg" alt="" width="14px"></button>
+                                <div className="desk-btn">
+                                    <Link to ="/contact">
+                                        <div className="btn-contain">
+                                            <button className="btn btn-flex">Inquire Here<img src={arrow} alt="" width="14px" /></button>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                 
-                            <div class="right">
+                            <div className="right">
                                 <h4>Includes</h4>
-                                <ul class="services">
+                                <ul className="services">
                                     <li>Booking Venue(s)</li>
                                     <li>Booking Vendors</li>
                                     <li>Wedding Timeline</li>
@@ -97,54 +85,54 @@ const Packages = () => {
                             </div>
                         </div>
             
-                        <div class="center-btn">
-                            <a href="/contact.html">
-                                <div class="btn-contain">
-                                    <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                        <div className="center-btn">
+                            <Link to="/contact">
+                                <div className="btn-contain">
+                                    <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px" /></button>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
             
-                    <div class="partial-planning">
-                        <div class="desktop-ver">
-                            <div class="left">
-                                <div class="wave-top wave-three"><img src="img/wave-top.svg" alt=""></div>
-                                <div class="svgs-container">
-                                    <img src="" alt="">
-                                    <svg class="curved" viewBox="0 100 500 100" width="500" height="100">
+                    <div className="partial-planning">
+                        <div className="desktop-ver">
+                            <div className="left">
+                                <div className="wave-top wave-three"><img src={waveTop} alt="" /></div>
+                                <div className="svgs-container">
+                                    <img src="" alt=""/>
+                                    <svg className="curved" viewBox="0 100 500 100" width="500" height="100">
                                         <path id="curve" fill="transparent" d="M100,200 Q250,100 400,200"/>
                                         <text text-anchor="start" width="600">
-                                        <textPath xlink:href="#curve" class="curved-letters" startOffset="10%">
+                                        <textPath xlinkHref="#curve" className="curved-letters" startOffset="10%">
                                             Partial Planning
                                         </textPath>
                                         </text>
                                     </svg>
                                 </div>
-                                <div class="svg3-container">
-                                    <img class="flower" src="img/flower.svg" alt="">
+                                <div className="svg3-container">
+                                    <img className="flower" src={flower} alt="" />
                                 </div>
-                                <!-- insert flower svg -->
-                                <div class="description2">
+
+                                <div className="description2">
                                     <p>If you’ve already started the process on your own and need
                                         help the rest of the way, the Partial Planning Package might be
                                         the perfect solution! I’ll be there on the day-of so you can relax
                                         knowing your big day bestie is there to have your back!</p>
                                 </div>
             
-                                <div class="desk-btn">
-                                    <a href="/contact.html">
-                                        <div class="btn-contain">
-                                            <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                                <div className="desk-btn">
+                                    <Link to="/contact">
+                                        <div className="btn-contain">
+                                            <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={ arrow } alt="" width="14px" /></button>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
-                                <div class="wave-bot-3"><img src="img/wave-bot.svg" alt=""></div>
+                                <div className="wave-bot-3"><img src={ waveBot } alt="" /></div>
                             </div>
-                
-                            <div class="listing">
+                            
+                            <div className="listing">
                                 <h4>Includes</h4>
-                                <ul class="services">
+                                <ul className="services">
                                     <li>Vendor Recommendations</li>
                                     <li>Vendor Management</li>
                                     <li>Wedding Timeline</li>
@@ -160,53 +148,53 @@ const Packages = () => {
                         </div>
                     
             
-                        <div class="center-btn">
-                            <a href="/contact.html">
-                                <div class="btn-contain">
-                                    <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                        <div className="center-btn">
+                            <Link to="/contact">
+                                <div className="btn-contain">
+                                    <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px" /></button>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
             
-                    <div class="day-of-cord">
-                        <div class="desktop-ver">
-                            <div class="left">
-                                <div class="svgs-container">
-                                    <svg class="curved" viewBox="0 100 500 120" width="500" height="120">
+                    <div className="day-of-cord">
+                        <div className="desktop-ver">
+                            <div className="left">
+                                <div className="svgs-container">
+                                    <svg className="curved" viewBox="0 100 500 120" width="500" height="120">
                                         <path id="curve" fill="transparent" d="M100,200
                                         Q250,100 400,200"/>
                                         <text text-anchor="start"width="600">
-                                        <textPath xlink:href="#curve" class="curved-letters" startOffset="12px">
+                                        <textPath xlinkHref="#curve" className="curved-letters" startOffset="12px">
                                             Day of Coordination
                                         </textPath>
                                         </text>
                                     </svg>
                                 </div>
             
-                                <div class="svg2-container">
-                                    <img class="star-3" src="img/hearts.svg" alt="">
+                                <div className="svg2-container">
+                                    <img className="star-3" src={hearts} alt="" />
                                 </div>
-                                <!-- insert heart svg -->
-                                <div class="description2">
+
+                                <div className="description2">
                                     <p>As your big day bestie, i’ll jump in to help during the week of
                                         your wedding and make sure everything runs smoothly the day
                                         of! I’ll be there that day to take care of all the little details so
                                         you can just enjoy your day together!</p>
                                 </div>
             
-                                <div class="desk-btn">
-                                    <a href="/contact.html">
-                                        <div class="btn-contain">
-                                            <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                                <div className="desk-btn">
+                                    <Link to="/contact">
+                                        <div className="btn-contain">
+                                            <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px"/></button>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
             
-                            <div class="listing">
+                            <div className="listing">
                                 <h4>Includes</h4>
-                                <ul class="services">
+                                <ul className="services">
                                     <li>Vendor Recommendations</li>
                                     <li>Wedding Timeline</li>
                                     <li>Rehearsal Ceremony</li>
@@ -219,77 +207,77 @@ const Packages = () => {
                             </div>
                         </div>
             
-                        <div class="center-btn">
-                            <a href="/contact.html">
-                                <div class="btn-contain">
-                                    <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                        <div className="center-btn">
+                            <Link to="/contact">
+                                <div className="btn-contain">
+                                    <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px"/></button>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
             
-                    <div class="other-services">
-                        <div class="wave-top-4"><img src="img/wave-top.svg" alt=""></div>
-                        <h2 style="font-size: 1.5rem;">OTHER SERVICES</h2>
-                        <div class="desktop-ver">
-                            <div class="left">
-                                <div class="svgs-container">
-                                    <svg class="curved" viewBox="0 100 500 100" width="500" height="100">
+                    <div className="other-services">
+                        <div className="wave-top-4"><img src={waveTop} alt="" /></div>
+                        <h2 style={{fontSize: '1.5rem'}}>OTHER SERVICES</h2>
+                        <div className="desktop-ver">
+                            <div className="left">
+                                <div className="svgs-container">
+                                    <svg className="curved" viewBox="0 100 500 100" width="500" height="100">
                                         <path id="curve" fill="transparent" d="M100,200
                                         Q250,100 400,200"/>
                                         <text text-anchor="start"width="600">
-                                        <textPath xlink:href="#curve" class="curved-letters sm">
+                                        <textPath xlinkHref="#curve" className="curved-letters sm">
                                             Day of Content Creation
                                         </textPath>
                                         </text>
                                     </svg>
                                 </div>
             
-                                <div class="svg3-container">
-                                    <img class="star-3" src="img/rings.svg" alt="">
+                                <div className="svg3-container">
+                                    <img className="star-3" src={rings} alt="" />
                                 </div>
-                                <!-- insert svg -->
-                                <div class="description2">
+
+                                <div className="description2">
                                     <p>As your Day Of Content Creator, I can post stories, reels and images in real time for those loved ones who couldn’t make it to the event! Waiting for your professional images and video can take forever, so I capture memories you and your spouse can look back at as soon as the day is over!</p>
                                 </div>
                             </div>
-                            <div class="listing">
+                            <div className="listing">
                                 <h4>Includes</h4>
-                                <ul class="services">
+                                <ul className="services">
                                     <li>Unlimited Photos/Videos</li>
                                     <li>Unlimited Stories</li>
                                     <li>2-3 Posts</li>
                                     <li>2 Curated Reels (Edited Videos)</li>
                                 </ul>
-                                <div class="desk-btn">
-                                    <a href="/contact.html">
-                                        <div class="btn-contain">
-                                            <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                                <div className="desk-btn">
+                                    <Link to="/contact">
+                                        <div className="btn-contain">
+                                            <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px"/></button>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="desktop-ver">
-                            <div class="left">
-                                <div class="svgs-container">
-                                    <svg class="curved" viewBox="0 100 500 100" width="500" height="100">
+                        <div className="desktop-ver">
+                            <div className="left">
+                                <div className="svgs-container">
+                                    <svg className="curved" viewBox="0 100 500 100" width="500" height="100">
                                         <path id="curve" fill="transparent" d="M100,200
                                         Q250,100 400,200"/>
                                         <text text-anchor="start"width="600">
-                                        <textPath xlink:href="#curve" class="curved-letters sm" startOffset="10%">
+                                        <textPath xlinkHref="#curve" className="curved-letters sm" startOffset="10%">
                                             Customized Designs
                                         </textPath>
                                         </text>
                                     </svg>
                                 </div>
             
-                                <div class="svg3-container">
-                                    <img class="star-3" src="img/stars-3.svg" alt="">
+                                <div className="svg3-container">
+                                    <img className="star-3" src={star3} alt="" />
                                 </div>
-                                <!-- insert svg -->
-                                <div class="description2">
+
+                                <div className="description2">
                                     <p>Have a specific wedding invitation, save the date, or wedding
                                         sign/stationary in mind and don’t know how to bring it to life?
                                         Let me help custom design your vision! From passport invites
@@ -297,50 +285,50 @@ const Packages = () => {
                                         timeline, I can help create your out of the box ideas!</p>
                                 </div>
                             </div>
-                            <div class="listing">
+                            <div className="listing">
                                 <h4>a la carte</h4>
-                                <ul class="services">
+                                <ul className="services">
                                     <li>Custom Design</li>
                                     <li>Print And Deliver</li>
                                     <li>DIY Your Vision To Life</li>
                                     <li>(Source + Put Together Materials)</li>
                                 </ul>
             
-                                <div class="desk-btn">
-                                    <a href="/contact.html">
-                                        <div class="btn-contain">
-                                            <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                                <div className="desk-btn">
+                                    <Link to="/contact">
+                                        <div className="btn-contain">
+                                            <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px"/></button>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="center-btn">
-                            <a href="/contact.html">
-                                <div class="btn-contain">
-                                    <button class="btn btn-flex" style="margin-bottom: 1rem;">Inquire Here <img src="/img/arrow.svg" alt="" width="14px"></button>
+                        <div className="center-btn">
+                            <Link to="/contact">
+                                <div className="btn-contain">
+                                    <button className="btn btn-flex" style={{ marginBottom: '1rem' }}>Inquire Here <img src={arrow} alt="" width="14px"/></button>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
             
-                        <div class="events">
-                            <div class="svgs-container">
-                                <svg class="curved" viewBox="0 100 500 95" width="500" height="95">
+                        <div className="events">
+                            <div className="svgs-container">
+                                <svg className="curved" viewBox="0 100 500 95" width="500" height="95">
                                     <path id="curve" fill="transparent" d="M100,200
                                     Q250,100 400,200"/>
                                     <text text-anchor="start"width="600">
-                                    <textPath xlink:href="#curve" class="curved-letters sm" startOffset="9px">
+                                    <textPath xlinkHref="#curve" className="curved-letters sm" startOffset="9px">
                                         Other Events In Mind?
                                     </textPath>
                                     </text>
                                 </svg>
                             </div>
             
-                            <div class="svg4-container">
-                                <img class="flower" src="img/flower.svg" alt="">
+                            <div className="svg4-container">
+                                <img className="flower" src={flower} alt="" />
                             </div>
-                            <h4 style="font-size: 0.8rem;">Contact Us Here</h4>
+                            <h4 style={{fontSize: '0.8rem'}}>Contact Us Here</h4>
                         </div>
                     </div>
                 </div>
@@ -348,3 +336,5 @@ const Packages = () => {
         </>
     )
 }
+
+export default Packages;
