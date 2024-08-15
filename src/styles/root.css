@@ -239,11 +239,22 @@
         text-align: center;
     }
 
+    .contain-2{
+        margin-top: 9rem;
+    }
+
     .wedding{
         font-size: 1.75rem;
         position: absolute;
         top: 170px;
         left: 20%;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem 0rem;
     }
 
     .planning-container{

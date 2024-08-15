@@ -110,10 +110,10 @@ const Root = () => {
                 <div className="pricing-container">
                     <div className="background-contain">
                         <h2 className="pricing-h2">PACKAGES & PRICING</h2>
-                        <img src={yellowFlower} alt="flower" width="100px" className="center flower" />
+                        <img src={yellowFlower} alt="flower" width="100px" className="center flower yellow" />
                         <div className="contain-2">
                             <h3 className="wedding cone">Wedding Planning</h3>
-                            <img src="/svg/hearts-row.svg" alt="flower" className="center" />
+                            <img src="/svg/hearts-row.svg" alt="hearts" className="hearts" />
                             <div className="planning-container">
                                 <div className="planning cone">
                                     <h3>Partial Planning</h3>

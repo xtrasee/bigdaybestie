@@ -110,7 +110,7 @@ const Packages = () => {
                                     </svg>
                                 </div>
                                 <div className="svg3-container">
-                                    <img className="flower" src={flower} alt="" />
+                                    <img className="flower black" src={flower} alt="" />
                                 </div>
 
                                 <div className="description2">
@@ -326,7 +326,7 @@ const Packages = () => {
                             </div>
             
                             <div className="svg4-container">
-                                <img className="flower" src={flower} alt="" />
+                                <img className="flower black" src={flower} alt="" />
                             </div>
                             <h4 style={{fontSize: '0.8rem'}}>Contact Us Here</h4>
                         </div>
