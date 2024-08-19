@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -36,26 +37,33 @@ const Gallery = () => {
                 </div>
             </header>
 
-            <Swiper
-                spaceBetween={10}
-                navigation={true}
-                thumbs={{ swiper: thumbsSwiper }}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper2"
-            >
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery1}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery2}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery3}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery4}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery5}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery1}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery8}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery5}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery6} /></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery6}/></SwiperSlide>
-            </Swiper>
-{/* 
-            <Swiper
+            <main>
+                <Link to="/">
+                    <div className="logo">
+                        <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                    </div>
+                </Link>
+                        
+                <Swiper
+                    spaceBetween={10}
+                    navigation={true}
+                    thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+                    modules={[FreeMode, Navigation, Thumbs]}
+                    className="mySwiper2"
+                >
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery1}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery2}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery3}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery4}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery5}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery1}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery8}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery5}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery6} /></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery6}/></SwiperSlide>
+                </Swiper>
+
+                <Swiper
                 onSwiper={setThumbSwiper}
                 spaceBetween={10}
                 slidesPerView={4}
@@ -63,18 +71,20 @@ const Gallery = () => {
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper"
-            >
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery1}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery2}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery3}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery4}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery5}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery1}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery8}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery5}/></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={gallery6} /></SwiperSlide>
-                <SwiperSlide><img className="swiper-slide-container" src={mainGallery6}/></SwiperSlide>
-            </Swiper> */}
+                >
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery1}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery2}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery3}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery4}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery5}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery1}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery8}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery5}/></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={gallery6} /></SwiperSlide>
+                    <SwiperSlide><img className="swiper-slide-container" src={mainGallery6}/></SwiperSlide>
+                    
+                </Swiper>
+            </main>
         </>
     )
 }
