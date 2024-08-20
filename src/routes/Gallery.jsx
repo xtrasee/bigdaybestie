@@ -12,16 +12,16 @@ import '../styles/gallery.css'
 
 import Navbar from "../components/NavBar";
 import logo from '/svg/logo.svg'
-import gallery1 from "../../public/images/gallery-1.JPEG";
-import gallery5 from "../../public/images/gallery-5.JPEG";
-import gallery6 from "../../public/images/gallery-6.JPG";
-import gallery8 from "../../public/images/gallery-8.JPEG";
+import gallery1 from "/images/gallery-1.JPEG";
+import gallery5 from "/images/gallery-5.JPEG";
+import gallery6 from "/images/gallery-6.JPG";
+import gallery8 from "/images/gallery-8.JPEG";
 import mainGallery1 from "/images/main-gallery-1.JPG";
 import mainGallery2 from "/images/main-gallery-2.JPEG";
-import mainGallery3 from "/public/images/main-gallery-3.JPEG";
-import mainGallery4 from "/public/images/main-gallery-4.JPEG";
-import mainGallery5 from "/public/images/main-gallery-5.JPEG";
-import mainGallery6 from "/public/images/main-gallery-6.JPEG";
+import mainGallery3 from "/images/main-gallery-3.JPEG";
+import mainGallery4 from "/images/main-gallery-4.JPEG";
+import mainGallery5 from "/images/main-gallery-5.JPEG";
+import mainGallery6 from "/images/main-gallery-6.JPEG";
 
 const Gallery = () => {
 
@@ -34,16 +34,18 @@ const Gallery = () => {
                     <div className="nav">
                         <Navbar />
                     </div>
+                    <Link to="/">
+                    <div className="logo">
+                        <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                    </div>
+                    </Link>
                 </div>
             </header>
 
             <main>
-                <Link to="/">
-                    <div className="logo">
-                        <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
-                    </div>
-                </Link>
-                        
+
+                <h2 style={{fontSize: '1.75rem', textAlign: 'center'}}>GALLERY</h2>
+
                 <Swiper
                     spaceBetween={10}
                     navigation={true}
