@@ -5,10 +5,6 @@
     align-items: center;
 }
 
-.about-container, .packages-container, .contact-container, .events{
-    background-color: var(--main-background);
-}
-
 .profile{
     height: 13rem;
     width: 12rem;
@@ -24,7 +20,7 @@
 }
 
 .about-content{
-    margin-top: 5rem;
+    margin-top: 4rem;
     background-color: var(--pink-color);
     padding: 0rem 0rem 0.8rem 0rem;
     z-index: 5;
@@ -33,10 +29,10 @@
 .about-content p{
     font-family: var(--main-font);
     font-size: 0.85rem;
+    font-weight: bold;
     letter-spacing: 0.05rem;
-    width: 60%;
+    width: 75%;
     margin: 0rem auto;
-    padding-top: 0.5rem;
     color: black;
 }
 

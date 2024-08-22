@@ -20,8 +20,8 @@ const Root = () => {
                         <Navbar />
                     </div>
                     <Link to="/">
-                        <div className="logo">
-                            <img className="main-logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        <div className="logo-container">
+                            <img className="logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
                         </div>
                     </Link>
                 </div>

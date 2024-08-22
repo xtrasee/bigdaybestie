@@ -1,22 +1,61 @@
+:root{
+    --main-background: #FFF8DC;
+    --main-font: 'Raleway';
+    --mainheader-font: 'Genty';
+    --header-font: 'TanMeringue';
+    --btn-color: #F5AC0B;
+    --pink-color: #F5ACC8;
+    --red-color: #FF5757;
+    --purple-color: #DAB6FF;
+    --light-orange-color: #FFCF73;
+    --mobile-fontsize: 0.75rem;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway.ttf');
+}
+
+@font-face {
+    font-family: 'Genty';
+    src: url('/fonts/Genty.ttf');
+}
+
+@font-face {
+    font-family: 'Luckybones';
+    src: url('/fonts/Luckybones.ttf');
+}
+
+@font-face {
+    font-family: 'TanMeringue';
+    src: url('/fonts/TanMeringue.ttf');
+}
+
 @media screen and (min-width: 300px){   
 
     .navbar{
         display: flex;
+        position: relative;
+        padding-bottom: 6rem;
     } 
 
     .nav{
         margin: 2rem 0rem 0rem 1rem;
-    }
-
-    .logo{
+        flex: 1;
         display: flex;
-        justify-content: center;
-        height: 150px;
+        justify-content: flex-start;
     }
 
-    .main-logo{
-        width: 100vw;
-        padding-right: 20%;
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .logo {
+        height: 140px;
+        max-width: 100%;
     }
 
     .contain-1 h1{

@@ -35,9 +35,9 @@ const Gallery = () => {
                         <Navbar />
                     </div>
                     <Link to="/">
-                    <div className="logo">
-                        <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
-                    </div>
+                        <div className="logo-container">
+                            <img className="logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        </div>
                     </Link>
                 </div>
             </header>
@@ -67,8 +67,8 @@ const Gallery = () => {
 
                 <Swiper
                 onSwiper={setThumbSwiper}
-                spaceBetween={10}
-                slidesPerView={4}
+                spaceBetween={-5}
+                slidesPerView={5}
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}

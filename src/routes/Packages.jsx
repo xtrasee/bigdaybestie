@@ -19,17 +19,16 @@ const Packages = () => {
                     <div className="nav">
                         <Navbar />
                     </div>
+                    <Link to="/">
+                        <div className="logo-container">
+                            <img className="logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        </div>
+                    </Link>
                 </div>
             </header>
 
             <main>
                 <div className="packages-container">
-                    <Link to="/">
-                        <div className="logo">
-                            <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
-                        </div>
-                    </Link>
-                    
                     <div className="packages" id="pricing">
                         <h2 className="pricing-h2">PACKAGES & PRICING</h2>
             

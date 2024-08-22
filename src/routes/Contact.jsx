@@ -13,17 +13,16 @@ const Contact = () => {
                     <div className="nav">
                         <Navbar />
                     </div>
+                    <Link to="/">
+                        <div className="logo-container">
+                            <img className="logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        </div>
+                    </Link>
                 </div>
             </header>
 
             <main>
                 <div className="contact-container">
-                    <Link to="/">
-                        <div className="logo">
-                            <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
-                        </div>
-                    </Link>
-                
                     <div className="form" id="contact-form">
                         <form action="" id="contactForm">
                             <label for="name">Full Name *</label>

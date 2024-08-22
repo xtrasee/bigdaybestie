@@ -15,16 +15,16 @@ const About = () => {
                     <div className="nav">
                         <Navbar />
                     </div>
+                    <Link to="/">
+                        <div className="logo-container">
+                            <img className="logo" src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
+                        </div>
+                    </Link>
                 </div>
             </header>
 
             <main>
                 <div className="about-container">
-                    <Link to="/">
-                        <div className="logo">
-                            <img src={logo} alt="Logo" height="140px" style={{ marginBottom: '2rem' }} />
-                        </div>
-                    </Link>
                     
                     <div className="about" id="about">
                         <div className="about-header">
