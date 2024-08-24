@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from "react";
+import $ from "jquery";
 import '../styles/contact.css'
 import Navbar from "../components/NavBar";
 import logo from '/svg/logo.svg';
 import whiteArrow from '/public/images/white-arrow.png';
 
 const Contact = () => {
+    const [name, setName] = useeState("");
+    const [email, setEmail] = useeState("");
+    const [phone, setPhone] = useeState("");
+
+
     return (
         <>
             <header>
-                <div className="navbar">
+                <div className="navbar"  style={{paddingBottom: '6rem'}}>
                     <div className="nav">
                         <Navbar />
                     </div>
