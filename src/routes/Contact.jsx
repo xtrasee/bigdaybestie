@@ -41,15 +41,15 @@ const Contact = () => {
                             <label htmlFor="cb">Preferred Method of Communication</label>
                             <div className="checkbox">
                                 <div style={{marginTop: '0.5rem;'}}>
-                                    <input id="cb" type="checkbox"/>
+                                    <input id="cb" type="checkbox" name="preferred_communication[]" value="Text"/>
                                     <p>Text</p>
                                 </div>
                                 <div>
-                                    <input id="cb" type="checkbox"/>
+                                    <input id="cb" type="checkbox" name="preferred_communication[]" value="Email"/>
                                     <p>Email</p>
                                 </div>
                                 <div>
-                                    <input id="cb" type="checkbox"/>
+                                    <input id="cb" type="checkbox" name="preferred_communication[]" value="Phone"/>
                                     <p>Phone Call</p>
                                 </div>
                             </div>
@@ -58,11 +58,11 @@ const Contact = () => {
                             <label htmlFor="cb">Is this date flexible</label>
                             <div className="checkbox">
                                 <div style={{marginTop: '0.5rem;'}}>
-                                    <input id="cb" type="checkbox"/>
+                                    <input id="cb" type="checkbox" name="date_flexible" value="Yes"/>
                                     <p>Yes</p>
                                 </div>
                                 <div>
-                                    <input id="cb" type="checkbox"/>
+                                    <input id="cb" type="checkbox" name="date_flexible" value="No"/>
                                     <p>No</p>
                                 </div>
                             </div>
@@ -70,19 +70,20 @@ const Contact = () => {
                             <input type="text" id="address" name="address" placeholder="E.g. 123 Wed St. San Diego, CA 92111" className="input"/>
                             <label htmlFor="type">What type of event are you planning? *</label>
                             <select name="type" id="type">
-                                <option value="">Insert option</option>
-                                <option value="">Insert option</option>
-                                <option value="">Insert option</option>
+                                <option value="">Select an option</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="party">Private Party</option>
                             </select>
                             <label htmlFor="guest-count">Est. Guest Count</label>
                             <input type="number" name="count" id="count" placeholder="E.g. 100" className="input" required/>
                             <label htmlFor="budget">Est. Total Budget</label>
-                            <input type="number" name="count" id="count" placeholder="E.g. $1000" className="input" required/>
+                            <input type="number" name="budget" id="count" placeholder="E.g. $1000" className="input" required/>
                             <label htmlFor="hear">How did you hear about us?</label>
                             <select name="hear" id="hear">
-                                <option value="">Insert option</option>
-                                <option value="">Insert option</option>
-                                <option value="">Insert option</option>
+                                <option value="">Select an option</option>
+                                <option value="internet">Internt Search</option>
+                                <option value="friend">Family or Friend Referral</option>
+                                <option value="social-media">Social Media</option>
                             </select>
                             <label htmlFor="social">Social Media Accounts (if you have it)!</label>
                             <input type="text" name="social" id="social" placeholder="@" className="input"/>
